@@ -2,7 +2,7 @@
 
 Aplicație web de tip **Single Page Application (SPA)**, dezvoltată în cadrul practicii de specialitate, folosind exclusiv **HTML5, CSS3 și JavaScript (Vanilla, ES6)** — fără framework-uri sau dependențe externe.
 
-**Demo live:** `https://nathaniel-brodetsky.github.io/notes-app/`
+**Demo live:** [https://notes-app228.netlify.app/](https://notes-app228.netlify.app/)
 
 ---
 
@@ -44,12 +44,18 @@ notes-app/
 
 ## Rulare locală
 
-Nu necesită instalare sau server. Este suficient să deschizi `index.html` direct în browser:
+Aplicația este disponibilă online la adresa de mai sus, dar poate fi rulată și local, fără instalare sau server:
+
+1. Descarcă sau clonează folderul cu cele trei fișiere (`index.html`, `style.css`, `script.js`), păstrându-le împreună în același director.
+2. Dă dublu-click pe `index.html`.
+3. Aplicația se va deschide direct în browser (Chrome, Firefox, Edge etc.), complet funcțională.
+
+Opțional, pentru clonare din Git:
 
 ```bash
 git clone https://github.com/nathaniel-brodetsky/notes-app.git
 cd notes-app
-# deschide index.html în browser (dublu-click sau Live Server)
+# deschide index.html direct în browser
 ```
 
 ---
@@ -73,7 +79,7 @@ Fiecare notiță este salvată sub formă de obiect JSON:
 
 ## Deployment
 
-Aplicația este publicată gratuit prin **GitHub Pages**, direct din branch-ul `main`. Orice actualizare pe `main` se reflectă automat pe site-ul live, disponibil la `https://nathaniel-brodetsky.github.io/notes-app/`.
+Codul sursă este versionat prin **Git** și publicat pe **GitHub**. Aplicația a fost desfășurată public prin platforma **Netlify** (Netlify Drop), fiind disponibilă online la adresa `https://notes-app228.netlify.app/`, fără a necesita configurarea unui server propriu. Aplicația poate fi rulată și local, prin deschiderea directă a fișierului `index.html` în orice browser modern.
 
 ---
 
