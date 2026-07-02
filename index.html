@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App | Aplicație de Notițe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="app-header">
+    <div class="header-content">
+      <h1 class="logo">📝 NoteKeeper</h1>
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="searchInput"
+          class="search-input"
+          placeholder="Caută după titlu sau conținut..."
+          autocomplete="off"
+        >
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <main class="app-main">
+
+    <!-- Form card for adding / editing a note -->
+    <section class="note-form-card">
+      <h2 id="formTitle">Adaugă o notiță nouă</h2>
+
+      <!-- Hidden field holds the ID of the note being edited (empty = new note) -->
+      <input type="hidden" id="noteId">
+
+      <div class="form-row">
+        <input
+          type="text"
+          id="noteTitle"
+          class="form-input"
+          placeholder="Titlu notiță"
+          maxlength="60"
+        >
+      </div>
+
+      <div class="form-row">
+        <textarea
+          id="noteContent"
+          class="form-textarea"
+          placeholder="Scrie conținutul notiței aici..."
+          rows="4"
+        ></textarea>
+      </div>
+
+      <div class="form-row form-row-inline">
+        <!-- Category / color tag selector -->
+        <label for="noteCategory" class="inline-label">Categorie:</label>
+        <select id="noteCategory" class="form-select">
+          <option value="yellow">🟡 General</option>
+          <option value="blue">🔵 Muncă</option>
+          <option value="green">🟢 Personal</option>
+          <option value="red">🔴 Urgent</option>
+          <option value="purple">🟣 Idei</option>
+        </select>
+
+        <div class="form-buttons">
+          <button id="saveBtn" class="btn btn-primary" type="button">Salvează</button>
+          <button id="cancelEditBtn" class="btn btn-secondary hidden" type="button">Anulează</button>
+        </div>
+      </div>
+
+      <p id="formError" class="form-error hidden">Titlul și conținutul nu pot fi goale.</p>
+    </section>
+
+    <!-- Notes grid -->
+    <section class="notes-section">
+      <div class="notes-toolbar">
+        <h2>Notițele mele</h2>
+        <span id="notesCount" class="notes-count">0 notițe</span>
+      </div>
+
+      <div id="notesGrid" class="notes-grid">
+        <!-- Notes are injected here dynamically by script.js -->
+      </div>
+
+      <p id="emptyState" class="empty-state hidden">
+        Nu ai nicio notiță încă. Adaugă prima ta notiță mai sus! ✨
+      </p>
+
+      <p id="noResults" class="empty-state hidden">
+        Nicio notiță nu corespunde căutării tale. 🔍
+      </p>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <p>&copy; 2026 NoteKeeper — Proiect realizat în cadrul practicii de specialitate.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
