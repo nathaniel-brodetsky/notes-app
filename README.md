@@ -2,7 +2,7 @@
 
 Aplicație web de tip **Single Page Application (SPA)**, dezvoltată în cadrul practicii de specialitate, folosind exclusiv **HTML5, CSS3 și JavaScript (Vanilla, ES6)** — fără framework-uri sau dependențe externe.
 
-**Demo live:** `https://<username>.github.io/notes-app/`
+**Demo live:** `https://nathaniel-brodetsky.github.io/notes-app/`
 
 ---
 
@@ -47,7 +47,7 @@ notes-app/
 Nu necesită instalare sau server. Este suficient să deschizi `index.html` direct în browser:
 
 ```bash
-git clone https://github.com/<username>/notes-app.git
+git clone https://github.com/nathaniel-brodetsky/notes-app.git
 cd notes-app
 # deschide index.html în browser (dublu-click sau Live Server)
 ```
@@ -73,7 +73,7 @@ Fiecare notiță este salvată sub formă de obiect JSON:
 
 ## Deployment
 
-Aplicația este publicată gratuit prin **GitHub Pages**, direct din branch-ul `main`. Orice actualizare pe `main` se reflectă automat pe site-ul live.
+Aplicația este publicată gratuit prin **GitHub Pages**, direct din branch-ul `main`. Orice actualizare pe `main` se reflectă automat pe site-ul live, disponibil la `https://nathaniel-brodetsky.github.io/notes-app/`.
 
 ---
 
